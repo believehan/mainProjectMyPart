@@ -1,5 +1,5 @@
 import './Community.css';
-import CommunityList from "./Community/CommunityList"
+import CommunityList from "./CommunityPage/CommunityList"
 function App() {
   return (
     <div>
