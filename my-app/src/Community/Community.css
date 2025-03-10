@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+}
+
+.object div{
+    display: flex;
+    float: right;
+}
