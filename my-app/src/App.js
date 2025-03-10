@@ -1,4 +1,4 @@
-import './App.css';
+import './Community.css';
 import CommunityList from "./Community/CommunityList"
 function App() {
   return (

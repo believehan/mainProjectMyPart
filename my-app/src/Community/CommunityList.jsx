@@ -1,8 +1,5 @@
 import PostList from "./PostList";
-
 const CommunityList = () => {
-
-
   
   return (
     <div>
