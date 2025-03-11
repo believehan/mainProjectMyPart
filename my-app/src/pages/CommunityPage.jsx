@@ -1,12 +1,13 @@
 
-import CommunityStyle from '../styles/CommunityStyles';
+import UserPoto from '../CommunityPage/UserPoto';
 import CommunityList from './../CommunityPage/CommunityList';
 
 const CommunityPage = () => {
+    
     return (
         <div>
-            <CommunityStyle />
             <CommunityList />
+            <UserPoto />
         </div>
     );
 

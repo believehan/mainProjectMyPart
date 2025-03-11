@@ -1,7 +1,7 @@
-import { createCommunityStyle } from "styled-components";
+import styled from "styled-components";
 
-const CommuStyle = createCommunityStyle`
-.object div{
+const CommuStyle = styled.div`
+div{
     float: left;
 }
 `;
