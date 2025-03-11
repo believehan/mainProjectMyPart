@@ -1,9 +1,11 @@
-import './Community.css';
-import CommunityList from "./CommunityPage/CommunityList"
-function App() {
+import CommunityPage from "./pages/CommunityPage";
+import GlobalStyles from "./styles/GlobalStyles";
+
+const App = () => {
   return (
     <div>
-      <CommunityList />
+      <GlobalStyles />
+      <CommunityPage />
     </div>
   );
 }
