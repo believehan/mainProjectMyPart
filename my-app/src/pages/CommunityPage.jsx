@@ -1,13 +1,16 @@
 
-import UserPoto from '../CommunityPage/UserPoto';
-import CommunityList from './../CommunityPage/CommunityList';
+// import UserPoto from '../Components/UserPoto';
+// import Like from '../Components/Like';
+import CommuStyle from './../styles/CommunityStyles';
+import PostList from './../Components/PostList';
 
 const CommunityPage = () => {
-    
+
     return (
         <div>
-            <CommunityList />
-            <UserPoto />
+            <CommuStyle>
+                <PostList />
+            </CommuStyle>
         </div>
     );
 

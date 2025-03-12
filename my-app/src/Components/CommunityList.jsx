@@ -5,6 +5,7 @@ const CommunityList = () => {
     <div>
       <h1>게시판</h1>
       <PostList />
+      
     </div>
   );
 };
