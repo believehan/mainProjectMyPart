@@ -1,17 +1,48 @@
 import styled from "styled-components";
 
 const CommuStyle = styled.div`
+.memberlist{
+  width: 700px;
+  height: auto;
+  margin: auto;
+}
+
+.meminfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: space-between;
+}
+.meminfo h2 {
+  margin: auto;
+}
+
 img {
   object-fit: cover;
 }
-.members {
+
+.member_poto_container{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.member_poto{
+  width: 700px;
+}
+.comment{
+  background-color: white;
+  color: black;
+}
+.members{
   margin: 15px;
-  object-fit: cover;
+  border: solid yellow;
   border-radius: 50%;
+  object-fit: cover;
   width : 70px;
   cursor : pointer;
   border : 1px solid #ccc;
 }
+
+// 좋아요 표시
 .like_container input {
   position: absolute;
   opacity: 0;
@@ -21,7 +52,8 @@ img {
 }
 
 .like_container {
-  display: block;
+  width: 50px;
+  /* display: block; */
   position: relative;
   cursor: pointer;
   user-select: none;
@@ -42,7 +74,17 @@ img {
 }
 
 .like_container input:checked ~ svg {
-  fill: #E3474F;
+  fill: #ff000d;
+}
+
+.likes{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.likes h3 {
+  margin-left: 10px;
 }
 `;
 

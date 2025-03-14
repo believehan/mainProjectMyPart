@@ -1,14 +1,12 @@
-
 import Like from './Like';
-const UserPoto = ({ selectedImage }) => {
 
+const UserPoto = ({ selectedImage, initialLike, id }) => {
     return (
         <div>
             {selectedImage && (
-                <div style={{ marginTop: "20px" }}>
-                    <h3>선택한 이미지</h3>
-                    <img src={selectedImage} alt="선택한 이미지" width="300" />
-                    <Like />
+                <div className='member_poto_container'>
+                    <img className="member_poto" src={selectedImage} alt="선택한 이미지" />
+                    <Like initialLike={initialLike} id={id}/>  
                 </div>
             )}
         </div>

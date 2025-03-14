@@ -1,27 +1,32 @@
-import imageData from "./../DB/Member.json"
+import MemberData from "./../DB/Member.json";
 import UserPoto from './UserPoto';
-import { useState } from 'react';
+// import Comment from './Comment';
 
 function PostList() {
-    const [selectedImage, setSelectedImage] = useState(null);
-    const handleClick = (url) => {
-        setSelectedImage(url); // 이미지 클릭 시 상태 업데이트
-    };
+
     return (
+
         <div>
-            <div>
-                {imageData[0].clientData.map((image) => (
-                    <img className="members"
-                        key={image.id}
-                        src={image.profilepoto}
-                        onClick={() => handleClick(image.url)}
-                        alt={image.name}
-                    />
+            <div className="memberlist">
+                {MemberData[0].clientData.map((image) => (
+
+                    <div key={image.id}>
+                        <div className="meminfo">
+                            <img
+                                className="members"
+                                src={image.profilepoto}
+                                alt={image.name} />
+                            <h2>{image.name}</h2>
+                        </div>
+                        <UserPoto selectedImage={image.url} initialLike={image.like} />
+                        {/* <Comment /> */}
+                        <hr />
+                    </div>
+
                 ))}
             </div>
-            <UserPoto selectedImage={selectedImage} />
         </div>
-    )
+    );
 }
 
 export default PostList;
