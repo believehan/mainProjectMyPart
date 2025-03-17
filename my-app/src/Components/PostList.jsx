@@ -10,7 +10,7 @@ function PostList() {
         fetch('http://localhost:5000/posts')
             .then(response => response.json())
             .then(data => {
-                setposts(data);
+                setposts(data.reverse());
             })
             .catch(error => console.error('Error fetching data:', error));
     }, []);
@@ -28,24 +28,24 @@ function PostList() {
     return (
         <div>
             <div className="memberlist">
-                {clientData.map(image => (
-                    <div key={image.id}>
-                        <div className="meminfo">
-                            <img
-                                className="members"
-                                src={image.profilepoto}
-                                alt={image.name}
-                            />
-                            <h2>{image.name}</h2>
-                        </div>
-                        {posts.map(post => (
-                            image.id === post.id && (
+                {posts.map(post => 
+                    clientData.map(image => 
+                        image.id === post.userId && (
+                            <div key={post.id}>
+                                <div className="meminfo">
+                                    <img
+                                        className="members"
+                                        src={image.profilepoto}
+                                        alt={image.name}
+                                    />
+                                    <h2>{image.name}</h2>
+                                </div>
                                 <UserPoto selectedImage={post.url} initialLike={post.like} />
-                            )
-                        ))}
-                        <hr />
-                    </div>
-                ))}
+                                <hr />
+                            </div>
+                        )
+                    )
+                )}
             </div>
         </div>
     );

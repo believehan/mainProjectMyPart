@@ -3,7 +3,7 @@ import styled from "styled-components";
 const CommuStyle = styled.div`
 .TemporaryHeader{
   height: 50px;
-  background-color: yellow;
+  background-color: #fec01f;
   
 }
 .TemporaryLogin input{
@@ -27,10 +27,6 @@ const CommuStyle = styled.div`
   margin: auto 0;
 }
 
-img {
-  object-fit: cover;
-}
-
 .member_poto_container{
   margin-top: 10px;
   text-align: center;
@@ -38,6 +34,8 @@ img {
 
 .member_poto{
   width: 700px;
+  height: 600px;
+  object-fit: contain;
 }
 
 .members{
@@ -47,7 +45,7 @@ img {
   object-fit: cover;
   width : 70px;
   cursor : pointer;
-  border : 1px solid #ccc;
+  border : 1px solid #a3b0b4;
 }
 
 // 좋아요 표시
@@ -108,7 +106,7 @@ img {
 }
 
 .modal-content {
-    background: white;
+    background: #a3b0b4;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -118,8 +116,8 @@ button {
     margin: 5px;
     padding: 10px;
     border: none;
-    background: #007BFF;
-    color: white;
+    background: #dc611b;
+    color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
 }

@@ -25,25 +25,29 @@ const TemporaryHeader = () => {
             console.error("로그인이 필요합니다.");
             return;
         }
-    
+
         const newPost = {
-            id: user.id,  // user가 null이 아니므로 안전하게 접근 가능
+            id: posts.id,  // user가 null이 아니므로 안전하게 접근 가능
+            userId: user.id,
             url: imageUrl,
             like: 0
         };
-    
+        if (!imageUrl) {
+            alert("url필요");
+            return;
+        }
         fetch("http://localhost:5000/posts", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newPost)
         })
-        .then(res => res.json())
-        .then(data => {
-            setPosts(prevPosts => [...prevPosts, data]);
-            setIsModalOpen(false);
-            setImageUrl('');
-        })
-        .catch(err => console.error("게시글 저장 실패:", err));
+            .then(res => res.json())
+            .then(data => {
+                setPosts(prevPosts => [...prevPosts, data]);
+                setIsModalOpen(false);
+                setImageUrl('');
+            })
+            .catch(err => console.error("게시글 저장 실패:", err));
     };
 
     return (
@@ -52,7 +56,7 @@ const TemporaryHeader = () => {
                 <div className="user-info">
                     <img src={user.profilepoto} alt="프로필 사진" className="profile-img" />
                     <h2>{user.name}님</h2>
-                    
+
                     {/* 게시판 작성 버튼 */}
                     <input
                         type="button"
@@ -69,9 +73,9 @@ const TemporaryHeader = () => {
                 <div className="modal">
                     <div className="modal-content">
                         <h3>사진 URL 입력</h3>
-                        <input 
-                            type="url" 
-                            placeholder="이미지 URL을 입력하세요" 
+                        <input
+                            type="url"
+                            placeholder="이미지 URL을 입력하세요"
                             value={imageUrl}
                             onChange={handleUrlChange} // URL 변경 처리
                         />
