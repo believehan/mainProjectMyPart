@@ -1,6 +1,18 @@
 import styled from "styled-components";
 
 const CommuStyle = styled.div`
+.TemporaryHeader{
+  height: 50px;
+  background-color: yellow;
+  
+}
+.TemporaryLogin input{
+  height: 30px;
+  margin: 10px 10px auto auto;
+  display: grid;
+  float: right;
+}
+
 .memberlist{
   width: 700px;
   height: auto;
@@ -9,11 +21,10 @@ const CommuStyle = styled.div`
 
 .meminfo {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: space-between;
+  grid-template-columns: 1fr 7fr;
 }
 .meminfo h2 {
-  margin: auto;
+  margin: auto 0;
 }
 
 img {
@@ -28,10 +39,7 @@ img {
 .member_poto{
   width: 700px;
 }
-.comment{
-  background-color: white;
-  color: black;
-}
+
 .members{
   margin: 15px;
   border: solid yellow;
@@ -85,6 +93,48 @@ img {
 
 .likes h3 {
   margin-left: 10px;
+}
+/* 모달 스타일 */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 프로필 스타일 */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 `;
 

@@ -1,0 +1,3 @@
+const Diet_recordsPage = () =>{
+    
+}

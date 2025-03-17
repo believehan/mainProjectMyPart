@@ -1,34 +1,46 @@
-[
+{
+  "clientData": [
     {
-        "clientData": [
-            {
-                "id": 1,
-                "name": "김운동",
-                "profilepoto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-                "url": "https://t3.ftcdn.net/jpg/04/15/50/30/240_F_415503068_p20YbxITwwobH69WP7CdRIDBlZhRHTHx.jpg",
-                "like": 3
-            },
-            {
-                "id": 2,
-                "name": "김땡땡",
-                "profilepoto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-                "url": "https://img.freepik.com/premium-photo/geom-eunsaeg-jeobsie-damgin-sogogiwa-yachae-eomug-i-deul-eogan-maekomhan-hangug-eumsig-tteogbokk-i-yoli_882361-246.jpg?w=1800",
-                "like": 0
-            },
-            {
-                "id": 3,
-                "name": "이운동",
-                "profilepoto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-                "url": "https://t3.ftcdn.net/jpg/04/15/50/30/240_F_415503068_p20YbxITwwobH69WP7CdRIDBlZhRHTHx.jpg",
-                "like": 1
-            },
-            {
-                "id": 4,
-                "name": "이땡땡",
-                "profilepoto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-                "url": "https://img.freepik.com/premium-photo/geom-eunsaeg-jeobsie-damgin-sogogiwa-yachae-eomug-i-deul-eogan-maekomhan-hangug-eumsig-tteogbokk-i-yoli_882361-246.jpg?w=1800",
-                "like": 0
-            }
-        ]
+      "id": 1,
+      "name": "김운동",
+      "profilepoto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 2,
+      "name": "김땡땡",
+      "profilepoto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 3,
+      "name": "이운동",
+      "profilepoto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 4,
+      "name": "이땡땡",
+      "profilepoto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
     }
-]
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "url": "https://t3.ftcdn.net/jpg/04/15/50/30/240_F_415503068_p20YbxITwwobH69WP7CdRIDBlZhRHTHx.jpg",
+      "like": 3
+    },
+    {
+      "id": 2,
+      "url": "https://img.freepik.com/premium-photo/geom-eunsaeg-jeobsie-damgin-sogogiwa-yachae-eomug-i-deul-eogan-maekomhan-hangug-eumsig-tteogbokk-i-yoli_882361-246.jpg?w=1800",
+      "like": 0
+    },
+    {
+      "id": 3,
+      "url": "https://t3.ftcdn.net/jpg/04/15/50/30/240_F_415503068_p20YbxITwwobH69WP7CdRIDBlZhRHTHx.jpg",
+      "like": 1
+    },
+    {
+      "id": 4,
+      "url": "https://img.freepik.com/premium-photo/geom-eunsaeg-jeobsie-damgin-sogogiwa-yachae-eomug-i-deul-eogan-maekomhan-hangug-eumsig-tteogbokk-i-yoli_882361-246.jpg?w=1800",
+      "like": 0
+    }
+  ]
+}

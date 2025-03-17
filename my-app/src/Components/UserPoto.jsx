@@ -6,7 +6,7 @@ const UserPoto = ({ selectedImage, initialLike, id }) => {
             {selectedImage && (
                 <div className='member_poto_container'>
                     <img className="member_poto" src={selectedImage} alt="선택한 이미지" />
-                    <Like initialLike={initialLike} id={id}/>  
+                    <Like initialLike={initialLike} id={id} />
                 </div>
             )}
         </div>

@@ -1,13 +1,9 @@
 import { useState } from 'react';
-// import { useEffect } from 'react';
 
 const Like = ({ initialLike }) => {
     const [isLiked, setIsLiked] = useState(initialLike >= 1);
 
-    // // selectedImage가 변경될 때 isLiked 초기화
-    // useEffect(() => {
-    //     setIsLiked(initialLike === 1);
-    // }, [initialLike]);
+
 
     const handleLikeToggle = async () => {
         const newLikeStatus = isLiked ? 0 : 1; //  현재 상태 반전
