@@ -1,3 +1,0 @@
-const Diet_recordsPage = () =>{
-    
-}

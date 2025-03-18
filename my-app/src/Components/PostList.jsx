@@ -26,12 +26,12 @@ function PostList() {
     }, []); // 빈 배열은 컴포넌트가 처음 렌더링될 때 한 번만 실행됨
 
     return (
-        <div>
+        <div >
             <div className="memberlist">
-                {posts.map(post => 
-                    clientData.map(image => 
+                {posts.map(post =>
+                    clientData.map(image =>
                         image.id === post.userId && (
-                            <div key={post.id}>
+                            <div key={post.id} className='post'>
                                 <div className="meminfo">
                                     <img
                                         className="members"

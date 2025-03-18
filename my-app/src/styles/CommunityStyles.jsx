@@ -14,17 +14,21 @@ const CommuStyle = styled.div`
 }
 
 .memberlist{
-  width: 700px;
+  width: 60vw;
   height: auto;
   margin: auto;
 }
 
+.post {
+  margin-top: 10px;
+}
 .meminfo {
   display: grid;
   grid-template-columns: 1fr 7fr;
 }
 .meminfo h2 {
   margin: auto 0;
+  width: 30rem;
 }
 
 .member_poto_container{
@@ -33,8 +37,8 @@ const CommuStyle = styled.div`
 }
 
 .member_poto{
-  width: 700px;
-  height: 600px;
+  width: 50vw;
+  height: 60vh;
   object-fit: contain;
 }
 
