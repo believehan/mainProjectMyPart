@@ -1,0 +1,31 @@
+.posts{
+    padding-top: 50px;
+    color: #fec01f;
+  }
+  .memberlist{
+    width: 60vw;
+    height: auto;
+    margin: auto;
+  }
+  
+  .post {
+    margin-top: 10px;
+  }
+  .meminfo {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+  }
+  .meminfo h2 {
+    margin: auto 0 ;
+    width: 30rem;
+    text-align: start;
+  }
+.members{
+    margin: 15px;
+    border: solid yellow;
+    border-radius: 50%;
+    object-fit: cover;
+    width : 70px;
+    cursor : pointer;
+    border : 1px solid #a3b0b4;
+  }

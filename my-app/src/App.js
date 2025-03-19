@@ -1,23 +1,27 @@
-import { useState } from "react";
-import CommunityPage from "./pages/CommunityPage";
-import DietRecordsPage from "./pages/DietRecordsPage";
-import GlobalStyles from "./styles/GlobalStyles";
+import React from 'react';
+import Header from '../src/subin/main/Header';
+// import Footer from '../src/subin/main/Footer'
+import Main from '../src/subin/main/Main';
+// import Insert from './subin/insert/insert';
+// import Login from './subin/login/login';
+// import Subscribe from './subin/membership/subscribe';
 
-const App = () => {
-  const [currentPage, setCurrentPage] = useState("community");
+import './App.css';
+import CommunityPage from './mideum/pages/CommunityPage';
+import DietRecordsPage from './mideum/pages/DietRecordsPage';
 
+
+function App() {
   return (
-    <div>
-      <GlobalStyles />
-
-      {/* 페이지 변경 버튼 */}
-      <button onClick={() => setCurrentPage("community")}>커뮤니티</button>
-      <button onClick={() => setCurrentPage("diet")}>다이어트 기록</button>
-
-      {/* 선택된 페이지 표시 */}
-      {currentPage === "community" ? <CommunityPage /> : <DietRecordsPage />}
+    <div className="appContainer">
+      {/* <Subscribe/> */}
+      {/* <Main/> */}
+      {/* <Login/> */}
+      {/* <Insert /> */}
+      <CommunityPage /> 
+      {/* <DietRecordsPage /> */}
     </div>
   );
-};
-
+}
 export default App;
+

@@ -1,0 +1,147 @@
+
+.footer {
+    padding: 40px 20px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #35393a !important;
+    color: #a3b0b4;
+    padding: 33px 0 45px;
+}
+
+.footer a {
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer .contact-info,
+.footer .newsletter-signup {
+    margin-bottom: 50px;
+}
+
+.social-links{
+    margin-top: 30px;
+    text-align: right;
+    padding-bottom: 5rem;
+            
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.company{
+    text-align: left;
+}
+
+.company p {
+    margin: 10px 10px;
+    color: #a3b0b4;
+    font-size: 16px;
+    text-align: left;
+}
+
+.social-links a {
+    margin: 0 15px;
+    margin-top: 100px;
+    color: #a3b0b4;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #dc611b;
+}
+
+@media (max-width: 375px) {
+    .footer {
+        padding: 25px 10px;
+    }
+
+    .newsletter-signup form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-signup input[type="email"] {
+        width: 180px;
+    }
+
+    .newsletter-signup button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .social-links {
+        text-align: center;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+}
+
+/* 아이패드 프로 (1024px 이하) */
+@media (max-width: 1024px) {
+    .footer {
+        padding: 35px 20px;
+    }
+
+    .newsletter-signup form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .newsletter-signup input[type="email"] {
+        width: 220px;
+    }
+
+    .newsletter-signup button {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+
+    .social-links {
+        text-align: center;
+    }
+
+    .contact-info p {
+        font-size: 15px;
+    }
+}
+
+/* 기존 스타일 유지: 768px 이하 */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .newsletter-signup form {
+        flex-direction: column;
+    }
+
+    .newsletter-signup input[type="email"] {
+        width: 200px;
+    }
+}
+
+@media (max-width: 390px) {
+    .footer {
+        padding: 25px 10px;
+    }
+
+    .newsletter-signup form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-signup input[type="email"] {
+        width: 180px;
+    }
+
+    .newsletter-signup button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}

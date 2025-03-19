@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  padding: 137px 0 140px;
+  margin-top: 50vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #06070a;
+  color: #dc611b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+@font-face {
+  font-family: 'TTHakgyoansimMulgyeolB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMulgyeolB.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* 아이패드 프로 */
+@media (max-width: 1024px) {
+  .logo {
+    font-size: 40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+/* 아이폰 12 Pro */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 28px;
+  }
+
+  button {
+    font-size: 14px;
   }
 }

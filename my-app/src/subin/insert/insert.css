@@ -1,0 +1,91 @@
+
+.reg-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    border-radius: 8px;
+    height: 80%;
+    max-width: 500px;
+    margin-top: 5vh;
+}
+
+.menu {
+    color: #dc611b;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.signup-form {
+    width: 100%;
+    color: white;
+}
+
+.reg_sbox {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.label {
+    text-align: left;
+    display: block;
+    font-size: 18px;
+}
+
+.reg_input {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reg_input input,
+.reg_input select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.reg_sbox .input_text1 {
+    width: 50%;
+}
+
+.reg_sbox .select_type1 {
+    width: 50%;
+}
+
+.reg_input .option {
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.submitButton {
+    margin-top: 20px;
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    height: 3em;
+    border: none;
+    outline: none;
+    transition: 0.4s ease-in-out;
+    background-color: #35393a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: rgb(24, 17, 17);
+    color: #a3b0b4;
+}
+
+.inputForm svg, .inputForm .fa {
+    font-size: 20px; 
+    color: #000; 
+}
