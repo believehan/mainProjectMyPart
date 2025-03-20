@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // react-router-dom의 useNavigate를 사용합니다.
 import './TemporaryHeader.css';
-import Login from './../../subin/login/login';
 
 const TemporaryHeader = () => {
     // 로그인된 사용자, 게시글, 모달, 입력된 이미지 URL 상태 관리
