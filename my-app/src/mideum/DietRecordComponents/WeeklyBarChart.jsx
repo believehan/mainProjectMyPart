@@ -4,7 +4,7 @@ import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Lege
 // ChartJS에 사용할 요소 등록
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
-const WeekCal = () => {
+const WeeklyBarChart = () => {
   const data = {
     labels: ['월', '화', '수', '목', '금', '토', '일'],
     datasets: [
@@ -29,4 +29,4 @@ const WeekCal = () => {
   return <Bar data={data} options={options} />;
 };
 
-export default WeekCal;
+export default WeeklyBarChart;

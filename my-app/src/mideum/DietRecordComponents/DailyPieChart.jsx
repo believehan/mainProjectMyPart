@@ -4,7 +4,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 // 필수 요소 등록
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const ToDayCal = () => {
+const DailyPieChart = () => {
   const data = {
     labels: ['탄수화물', '단백질', '지방'],
     datasets: [
@@ -39,10 +39,10 @@ const ToDayCal = () => {
   };
 
   return (
-    <div style={{ width: '400px', margin: '0 auto' }}>
+    <div style={{ width: '300px', margin: '0 auto' }}>
       <Pie data={data} options={options} />
     </div>
   );
 };
 
-export default ToDayCal;
+export default DailyPieChart;

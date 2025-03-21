@@ -20,7 +20,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/subscribe" element={<Subscribe />} />
           <Route path="/community" element={<CommunityPage />} />
-          <Route path="/diet" element={<DietRecordsPage />} />
+          <Route path="/DietRecordsPage" element={<DietRecordsPage />} />
           <Route path="/insert" element={<Insert />} />
         </Routes>
       </BrowserRouter>
