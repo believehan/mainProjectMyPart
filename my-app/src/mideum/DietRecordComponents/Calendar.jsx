@@ -40,9 +40,9 @@ const Calendar = ({ onDateSelect }) => {
     return (
         <div>
             <div className='pastFuter'>
-                <button onClick={handlePrevMonth}>이전</button>
+                <button className='Calbtn' onClick={handlePrevMonth}>&lt;</button>
                 {year}년 {month + 1}월
-                <button onClick={handleNextMonth}>다음</button>
+                <button className='Calbtn' onClick={handleNextMonth}>&gt;</button>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '4px' }}>
                 {days.map((day) => (

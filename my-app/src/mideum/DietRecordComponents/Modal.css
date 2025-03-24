@@ -22,7 +22,7 @@
   }
   
   .modal-content button {
-    background-color: #fec01f; /* 파란색 */
+    background-color: #fec01f;
     color: white;
     padding: 8px 16px;
     border: none;
@@ -32,6 +32,6 @@
   }
   
   .modal-content button:hover {
-    background-color: #dc611b; /* 더 진한 파란색 */
+    background-color: #dc611b; 
   }
   

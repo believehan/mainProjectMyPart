@@ -1,7 +1,14 @@
-.ChartList {
+.RecordList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 50vw;
+}
+.Cal_Input{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.Cal{
+    min-height: 21vw;
 }
 .Charts{
     margin-left: 30px;
@@ -15,7 +22,7 @@ ul {
     text-align: left;
 }
 .FoodSet{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .FoodSet li{
     margin-top: 10px;

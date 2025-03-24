@@ -1,5 +1,4 @@
 import DietRecordsStyle from './../styles/DietRecordsStyle';
-import WeeklyBarChart from './../DietRecordComponents/WeeklyBarChart';
 import CalorieTracker from '../DietRecordComponents/CalorieTracker';
 import Header from './../../subin/main/Header';
 
@@ -9,8 +8,7 @@ const DietRecordsPage = () => {
             <Header />
             <DietRecordsStyle>
                 <div>
-
-                        <CalorieTracker />
+                    <CalorieTracker />
 
                 </div>
             </DietRecordsStyle>

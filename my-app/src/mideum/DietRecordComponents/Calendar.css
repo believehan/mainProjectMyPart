@@ -1,7 +1,12 @@
-.pastFuter{
+.pastFuter {
     display: flex;
     justify-content: space-between;
 }
-.pastFuter button{
-    padding: 2px;
+
+.Calbtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    color: #dc611b;
+    background-color: #06070a;
 }

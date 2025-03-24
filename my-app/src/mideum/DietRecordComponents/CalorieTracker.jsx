@@ -72,10 +72,12 @@ const CalorieTracker = () => {
   };
 
   return (
-    <div className='ChartList'>
-      <div>
-        <h1>식단 기록 캘린더</h1>
-        <Calendar onDateSelect={handleDateSelect} />
+    <div className='RecordList'>
+      <div className='Cal_Input'>
+        <div className='Cal'>
+          <h1>식단 기록 캘린더</h1>
+          <Calendar onDateSelect={handleDateSelect} />
+        </div>
         <div className='FoodSet'>
           <FoodInputForm />
           <ul>
@@ -85,7 +87,7 @@ const CalorieTracker = () => {
           </ul>
         </div>
       </div>
-            {modalMessage && <Modal message={modalMessage} onClose={handleCloseModal} />}
+      {modalMessage && <Modal message={modalMessage} onClose={handleCloseModal} />}
 
       <div className='Charts'>
         <div>
