@@ -8,7 +8,23 @@
       "confirmPasswd": "passwd",
       "MembershipStatus": "T",
       "MembershipClass": 0,
-      "profilepoto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+      "profilepoto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+      "calorieData": {
+        "2025-03-22": {
+          "food": [
+            "쌀밥",
+            "닭가슴살",
+            "샐러드"
+          ]
+        },
+        "2025-03-23": {
+          "food": [
+            "라면",
+            "김밥",
+            "계란"
+          ]
+        }
+      }
     },
     {
       "id": 2,
@@ -113,6 +129,50 @@
       "url": "https://img.freepik.com/free-photo/delicious-sweet-cake-with-strawberries-baiser-plate_181624-44787.jpg?ga=GA1.1.647368945.1737282865&semt=ais_hybrid",
       "like": 0,
       "id": 12
+    }
+  ],
+  "foodList": [
+    {
+      "foodName": "쌀밥",
+      "calories": 300,
+      "carbs": 60,
+      "protein": 6,
+      "fat": 1
+    },
+    {
+      "foodName": "닭가슴살",
+      "calories": 200,
+      "carbs": 0,
+      "protein": 40,
+      "fat": 3
+    },
+    {
+      "foodName": "샐러드",
+      "calories": 150,
+      "carbs": 10,
+      "protein": 5,
+      "fat": 2
+    },
+    {
+      "foodName": "라면",
+      "calories": 500,
+      "carbs": 70,
+      "protein": 10,
+      "fat": 18
+    },
+    {
+      "foodName": "김밥",
+      "calories": 400,
+      "carbs": 50,
+      "protein": 8,
+      "fat": 12
+    },
+    {
+      "foodName": "계란",
+      "calories": 150,
+      "carbs": 1,
+      "protein": 12,
+      "fat": 10
     }
   ]
 }

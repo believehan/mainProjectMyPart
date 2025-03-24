@@ -1,0 +1,7 @@
+.pastFuter{
+    display: flex;
+    justify-content: space-between;
+}
+.pastFuter button{
+    padding: 2px;
+}

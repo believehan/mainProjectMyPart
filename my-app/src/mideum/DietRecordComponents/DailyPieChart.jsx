@@ -4,13 +4,13 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 // 필수 요소 등록
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const DailyPieChart = () => {
+const DailyPieChart = ({ carbs, protein, fat }) => {
   const data = {
     labels: ['탄수화물', '단백질', '지방'],
     datasets: [
       {
         label: '비율 (%)',
-        data: [50, 30, 20],
+        data: [carbs, protein, fat],
         backgroundColor: [
           'rgba(255, 99, 132, 0.6)',   // 탄수화물
           'rgba(54, 162, 235, 0.6)',   // 단백질

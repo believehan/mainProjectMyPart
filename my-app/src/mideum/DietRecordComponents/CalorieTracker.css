@@ -1,0 +1,22 @@
+.ChartList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50vw;
+}
+.Charts{
+    margin-left: 30px;
+}
+.Charts div{
+    height: 40vh;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+    text-align: left;
+}
+.FoodSet{
+    margin-top: 20px;
+}
+.FoodSet li{
+    margin-top: 10px;
+}
