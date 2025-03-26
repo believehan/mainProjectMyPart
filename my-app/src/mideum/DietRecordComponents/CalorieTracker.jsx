@@ -75,7 +75,7 @@ const CalorieTracker = () => {
     <div className='RecordList'>
       <div className='Cal_Input'>
         <div className='Cal'>
-          <h1>식단 기록 캘린더</h1>
+          {/* <h1>식단 기록 캘린더</h1> */}
           <Calendar onDateSelect={handleDateSelect} />
         </div>
         <div className='FoodSet'>
